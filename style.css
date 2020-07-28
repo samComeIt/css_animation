@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#needle {
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#arm {
+    animation: arm_swing 1s infinite;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
+#clock_stop {
+    animation: updown 1s infinite linear;
+}
+
+#sun {
+    animation: sunrise 2s infinite;
+    alternate;
+}
+
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes updown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+@keyframes sunrise {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5px);
+        transform: translateY(30px);
+    }
+}
+
+@keyframes arm_swing {
+    from {
+        transform: tran
+    } 
+    to{
+        translateY
+    }
+}
+
