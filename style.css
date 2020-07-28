@@ -15,7 +15,7 @@ body {
 }
 
 #arm {
-    animation: arm_swing 1s infinite;
+    animation: arm_swing 1s alternate;
     transform-origin: top;
     transform-box: fill-box;
 }
@@ -25,8 +25,7 @@ body {
 }
 
 #sun {
-    animation: sunrise 2s infinite;
-    alternate;
+    animation: sunrise 2s ease infinite alternate;
 }
 
 @keyframes wheel {
@@ -57,11 +56,6 @@ body {
 }
 
 @keyframes arm_swing {
-    from {
-        transform: tran
-    } 
-    to{
-        translateY
-    }
+    
 }
 
